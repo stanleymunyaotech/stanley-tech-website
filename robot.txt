@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stanleymunyaotech.github.io/stanley-tech-website/sitemap.xml
