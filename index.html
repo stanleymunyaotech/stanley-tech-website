@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="LaI9nx2pMNEZ4oHL1DmKBtIdDaPGpyzS1zhGfsQvPvI" />
+
+ <title>Stanley Munyao Tech | Data Analysis, Websites & Software Kenya</title>
+
+    
+        content="Stanley Munyao Tech provides data analysis, Power BI dashboards, business websites and software solutions for small businesses in Kenya.">
+    <meta name="keywords"
+        content="Python developer Kenya, data analysis Kenya, Power BI dashboards, Excel analysis, SQL, website development Nairobi, shop management system">
+
+    <meta name="author" content="Stanley Munyao">
+
+    <link rel="canonical"
+        href="https://stanleymunyaotech.github.io/stanley-tech-website/">
+
+    <meta property="og:title"
+        content="Stanley Munyao Tech | Software, Data & Web Solutions">
+
+    <meta property="og:description"
+        content="Practical software systems, data dashboards and professional websites for small businesses.">
+
+    <meta property="og:url"
+        content="https://stanleymunyaotech.github.io/stanley-tech-website/">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:site_name"
+        content="Stanley Munyao Tech">
+
+    <meta name="theme-color"
+        content="#0a0a0a">
+
+
+    <!-- =====================================================
+         STRUCTURED DATA / SEO SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Stanley Munyao Tech",
+        "url": "https://stanleymunyaotech.github.io/stanley-tech-website/",
+        "description": "Software, data analysis and professional website solutions for small businesses.",
+        "areaServed": "Kenya",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "serviceType": [
+            "Software Development",
+            "Data Analysis",
+            "Dashboard Development",
+            "Website Development"
+        ]
+    }
+    </script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =====================================================
+           INTERACTIVE SERVICE / PROJECT STYLES
+        ===================================================== */
+
+        .service-card {
+            cursor: pointer;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card.selected {
+            border: 1px solid #00ff88;
+            transform: translateY(-5px);
+        }
+
+        .service-select {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 16px;
+            border: 1px solid currentColor;
+            background: transparent;
+            color: inherit;
+            border-radius: 5px;
+            cursor: pointer;
+            font: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .service-select:hover {
+            background: #00ff88;
+            color: #000;
+            border-color: #00ff88;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            padding: 28px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.02);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,255,136,0.6);
+        }
+
+        .project-number {
+            font-size: 13px;
+            opacity: 0.5;
+        }
+
+        .project-card h3 {
+            margin: 14px 0 10px;
+        }
+
+        .project-card p {
+            line-height: 1.7;
+        }
+
+        .project-tech {
+            margin-top: 18px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* =====================================================
+           ENQUIRY PANEL
+        ===================================================== */
+
+        .enquiry-panel {
+            display: none;
+            margin-top: 35px;
+            padding: 30px;
+            border: 1px solid rgba(0,255,136,0.5);
+            border-radius: 10px;
+            background: rgba(0,255,136,0.03);
+        }
+
+        .enquiry-panel.active {
+            display: block;
+        }
+
+        .enquiry-panel h3 {
+            margin-bottom: 10px;
+        }
+
+        .selected-service {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .enquiry-form {
+            display: grid;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .enquiry-form input,
+        .enquiry-form textarea,
+        .enquiry-form select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(0,0,0,0.25);
+            color: inherit;
+            border-radius: 5px;
+            font: inherit;
+            box-sizing: border-box;
+        }
+
+        .enquiry-form textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .enquiry-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .enquiry-actions button,
+        .enquiry-actions a {
+            padding: 13px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font: inherit;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: #000;
+        }
+
+        .email-btn {
+            background: #00ff88;
+            color: #000;
+        }
+
+        .cancel-btn {
+            background: transparent;
+            color: inherit;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .enquiry-actions {
+                flex-direction: column;
+            }
+
+            .enquiry-actions button,
+            .enquiry-actions a {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
+
+    <header>
+
+        <div class="logo">
+            STANLEY MUNYAO<span>.TECH</span>
+        </div>
+
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#work">Projects</a>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn-primary">
+            Start a project
+        </a>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ===================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">
+                    SOFTWARE • DATA • WEBSITES
+                </p>
+
+              <h1>
+    Data. Software.<br>
+    <span>Built for business.</span>
+</h1>
+
+<p class="hero-text">
+    STANLEY MUNYAO.TECH provides practical data analysis,
+    Power BI dashboards, software solutions and professional
+    websites designed for small businesses in Kenya.
+</p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn-primary">
+                        Get a quote
+                    </a>
+
+                    <a href="#work" class="btn-secondary">
+                        See my work
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TERMINAL -->
+
+            <div class="code-card">
+
+                <div class="dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <div class="terminal">
+
+                    <div>
+                        <span class="gray">$</span>
+                        <span class="blue">stanley</span>
+                        build-business
+                    </div>
+
+                    <div class="gray">
+                        Creating your solution...
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <span class="green">✓</span>
+                        Shop management
+                    </div>
+
+                    <div>
+                        <span class="green">✓</span>
+                        Data analysis
+                    </div>
+
+                    <div>
+                        <span class="green">✓</span>
+                        Power BI dashboard
+                    </div>
+
+                    <div>
+                        <span class="green">✓</span>
+                        Business website
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <span class="green">READY</span>
+                        — let's build.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SERVICES
+        ===================================================== -->
+
+        <section id="services">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        WHAT I DO
+                    </p>
+
+                    <h2>
+                        What I Build
+                    </h2>
+
+                </div>
+
+
+<p>
+    Practical data analysis, software and website solutions
+    designed to help small businesses in Kenya save time,
+    understand their data and operate more efficiently.
+</p>
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card"
+                     onclick="selectService('Shop Management System')">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <div class="service-icon">
+                        ⚙
+                    </div>
+
+                    <h3>
+    Shop Management Software
+</h3>
+
+                    <p>
+                        Custom systems for managing products,
+                        inventory, customers, carts, checkout,
+                        receipts and sales history.
+                    </p>
+
+                    <div class="service-tools">
+                        Python <span>•</span>
+                        JSON <span>•</span>
+                        Automation
+                    </div>
+
+                    <div class="service-price">
+                        From KSh 5,000
+                    </div>
+
+                    <span class="service-note">
+                        Custom pricing based on features
+                    </span>
+
+                    <button
+                        type="button"
+                        class="service-select"
+                        onclick="event.stopPropagation(); selectService('Shop Management System')">
+
+                        Select service
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card featured-service"
+                     onclick="selectService('Data Analysis & Dashboards')">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <div class="service-icon">
+                        📊
+                    </div>
+                    
+                    <h3>
+    Data Analysis Services
+</h3>
+
+<a href="power-bi-small-business-kenya.html"
+   style="color:#00ff88;text-decoration:none;font-size:14px;">
+    Learn more about data analysis →
+</a>
+
+<p>
+    Turn raw business data into meaningful insights,
+    reports, dashboards and recommendations. I can
+    analyze sales, financial, customer, marketing,
+    operational, inventory and other business data.
+</p>
+
+                    <div class="service-tools">
+                        Excel <span>•</span>
+                        SQL <span>•</span>
+                        Power BI
+                    </div>
+
+                    <div class="service-price">
+                        From KSh 2,500
+                    </div>
+
+                    <span class="service-note">
+                        Analysis & dashboard pricing varies by project
+                    </span>
+
+                    <button
+                        type="button"
+                        class="service-select"
+                        onclick="event.stopPropagation(); selectService('Data Analysis Services')">
+
+                        Select service
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card"
+                     onclick="selectService('Business Website')">
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                    <div class="service-icon">
+                        ◇
+                    </div>
+
+                   <h3>
+    Business Website Development
+</h3>
+
+                    <p>
+                        Clean, responsive websites that clearly
+                        explain your business, build trust and make
+                        it easy for customers to contact you.
+                    </p>
+
+                    <div class="service-tools">
+                        HTML <span>•</span>
+                        CSS <span>•</span>
+                        JavaScript
+                    </div>
+
+                    <div class="service-price">
+                        From KSh 3,000
+                    </div>
+
+                    <span class="service-note">
+                        Simple sites to custom builds
+                    </span>
+
+                    <button
+                        type="button"
+                        class="service-select"
+                        onclick="event.stopPropagation(); selectService('Business Website')">
+
+                        Select service
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ENQUIRY PANEL
+            ================================================= -->
+
+            <div id="enquiryPanel" class="enquiry-panel">
+
+                <h3>
+                    Start your project
+                </h3>
+
+                <p>
+                    You selected:
+                    <span id="selectedService"
+                          class="selected-service">
+                    </span>
+                </p>
+
+
+                <form id="enquiryForm"
+                      class="enquiry-form"
+                      onsubmit="return false;">
+
+                    <input
+                        type="text"
+                        id="clientName"
+                        placeholder="Your name"
+                        required>
+
+
+                    <input
+                        type="text"
+                        id="businessName"
+                        placeholder="Business name">
+
+
+                    <input
+                        type="email"
+                        id="clientEmail"
+                        placeholder="Your email">
+
+
+                    <textarea
+                        id="projectDescription"
+                        placeholder="Tell me briefly what you want to build, analyze or improve..."
+                        required></textarea>
+
+
+                    <div class="enquiry-actions">
+
+                        <button
+                            type="button"
+                            class="whatsapp-btn"
+                            onclick="sendWhatsApp()">
+
+                            Send via WhatsApp
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="email-btn"
+                            onclick="sendEmail()">
+
+                            Send via Email
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="cancel-btn"
+                            onclick="closeEnquiry()">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROJECTS / WORK
+        ===================================================== -->
+
+        <section id="work">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SELECTED WORK
+                    </p>
+
+                    <h2>
+                        What I Build
+                    </h2>
+
+                </div>
+
+                <p>
+                    Practical projects focused on solving real
+                    business and data problems.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        PROJECT 01
+                    </span>
+
+                    <h3>
+                        Shop Management System
+                    </h3>
+
+                    <p>
+                        A Python-based management system designed
+                        to handle products, inventory, customers,
+                        carts, checkout, receipts and sales history.
+                    </p>
+
+                    <div class="project-tech">
+                        Python • JSON • File Management
+                    </div>
+
+                </article>
+
+
+
+                ```html
+<!-- PROJECT 2 -->
+
+<article class="project-card">
+
+    <span class="project-number">
+        PROJECT 02
+    </span>
+
+    <h3>
+        Sales Data Analysis &Bussiness Intelligence
+    </h3>
+
+  <p>
+    An 800-record business data analysis project using
+    Microsoft Excel to clean, analyze and visualize
+    sales data, identify performance patterns and
+    generate actionable business insights.
+</p>
+
+    <div class="project-tech">
+        Excel • Data Analysis • Business Intelligence
+    </div>
+
+<a href="https://github.com/stanleymunyaotech/sales-data-analysis-excel"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display:inline-block;margin-top:18px;color:#00ff88;text-decoration:none;">
+    View Project →
+</a>
+
+</article>
+```
+
+
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        PROJECT 03
+                    </span>
+
+                    <h3>
+                        Business Website
+                    </h3>
+
+                    <p>
+                        Clean and responsive websites designed
+                        to establish a professional online presence
+                        and make it easier for customers to connect.
+                    </p>
+
+                    <div class="project-tech">
+                        HTML • CSS • JavaScript
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ===================================================== -->
+
+        <section id="about">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+
+                    <h2>
+                        Building useful technology.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Technology should solve problems —
+                    not create more of them.
+                </p>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+                    I'm <strong>Stanley Munyao</strong>, a developer
+                    and data analysis student focused on building
+                    practical digital solutions for small businesses.
+                </p>
+
+                <p>
+                    My work combines programming, data analysis
+                    and web development to create tools that are
+                    useful, understandable and easy to use.
+                </p>
+
+                <p>
+                    Whether it's automating a shop's daily operations,
+                    turning business data into a dashboard or creating
+                    a professional online presence, my goal is simple:
+                </p>
+
+
+                <div class="about-highlight">
+
+                    <span>
+                        BUILD
+                    </span>
+
+                    <span>
+                        ANALYZE
+                    </span>
+
+                    <span>
+                        IMPROVE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROCESS
+        ===================================================== -->
+
+        <section id="process">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        HOW IT WORKS
+                    </p>
+
+                    <h2>
+                        Simple process.
+                    </h2>
+
+                </div>
+
+                <p>
+                    From identifying the problem to delivering
+                    a practical solution.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-step">
+
+                    <span class="step-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Tell me the problem
+                    </h3>
+
+                    <p>
+                        Explain what you want to automate,
+                        analyze, track or improve.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-step">
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <h3>
+                        I design the solution
+                    </h3>
+
+                    <p>
+                        We define the requirements, features,
+                        scope and expected result.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-step">
+
+                    <span class="step-number">
+                        03
+                    </span>
+
+                    <h3>
+                        I build & test
+                    </h3>
+
+                    <p>
+                        I develop the solution and test the
+                        important parts before delivery.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-step">
+
+                    <span class="step-number">
+                        04
+                    </span>
+
+                    <h3>
+                        You get the result
+                    </h3>
+
+                    <p>
+                        You receive a practical solution
+                        ready to use.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WHY CHOOSE ME
+        ===================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <h2>
+                        Why Choose Me?
+                    </h2>
+
+                    <p>
+                        I focus on practical solutions that help
+                        businesses save time, understand their data
+                        and grow online.
+                    </p>
+
+                </div>
+
+
+                <div class="grid">
+
+
+                    <article class="card">
+
+                        <div class="icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Practical Solutions
+                        </h3>
+
+                        <p>
+                            I don't build technology just for the sake of it.
+                            Every project is designed to solve a real business
+                            problem.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="card">
+
+                        <div class="icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Clear Communication
+                        </h3>
+
+                        <p>
+                            You know what is being built, what it costs and
+                            what to expect before development begins.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="card">
+
+                        <div class="icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Built for Your Business
+                        </h3>
+
+                        <p>
+                            Your solution can be customized around the way
+                            your business actually operates.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT
+        ===================================================== -->
+
+        <section id="contact" class="section">
+
+            <div class="container">
+
+                <div class="contact">
+
+
+                    <div>
+
+                        <span class="eyebrow">
+                            LET'S WORK
+                        </span>
+
+
+                        <h2 style="margin:18px 0 10px;font-size:38px;letter-spacing:-.04em">
+                            Have a business problem?
+                        </h2>
+
+
+                        <p>
+                            Tell me what you want to automate, track,
+                            analyze or improve. I'll help you find
+                            a practical solution.
+                        </p>
+
+
+                        <p>
+                            📧
+                            <strong>
+                                stanleymunyao42@gmail.com
+                            </strong>
+                        </p>
+
+
+                        <p>
+                            📱
+                            <strong>
+                                WhatsApp: +254 759 916 552
+                            </strong>
+                        </p>
+
+
+                        <p>
+                            📍
+                            <strong>
+                                Nairobi, Kenya
+                            </strong>
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="mailto:stanleymunyao42@gmail.com?subject=STANLEY%20MUNYAO.TECH%20Project%20Enquiry">
+
+                            Email me
+
+                        </a>
+
+
+                        <a
+                            class="btn btn-primary"
+                            href="https://wa.me/254759916552"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            WhatsApp me
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p class="footer-logo">
+                STANLEY MUNYAO<span>.TECH</span>
+            </p>
+
+
+            <p>
+                Practical software, data & web solutions.
+            </p>
+
+
+            <div class="footer-links">
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#work">
+                    Projects
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                &copy; 2026 Stanley Munyao. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+        /*
+        ========================================================
+        SELECT SERVICE
+        ========================================================
+        */
+
+        let selectedService = "";
+
+
+        function selectService(serviceName) {
+
+            selectedService = serviceName;
+
+
+            // Show selected service
+
+            document.getElementById("selectedService").textContent =
+                serviceName;
+
+
+            // Show enquiry panel
+
+            const panel = document.getElementById("enquiryPanel");
+
+            panel.classList.add("active");
+
+
+            // Scroll to enquiry panel
+
+            panel.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+
+            // Highlight selected service
+
+            const cards =
+                document.querySelectorAll(".service-card");
+
+
+            cards.forEach(function(card) {
+
+                card.classList.remove("selected");
+
+            });
+
+
+            // Find matching card
+
+            cards.forEach(function(card) {
+
+                const heading =
+                    card.querySelector("h3");
+
+                if (heading &&
+                    heading.textContent.trim() === serviceName) {
+
+                    card.classList.add("selected");
+
+                }
+
+            });
+
+        }
+
+
+
+        /*
+        ========================================================
+        CLOSE ENQUIRY
+        ========================================================
+        */
+
+        function closeEnquiry() {
+
+            const panel =
+                document.getElementById("enquiryPanel");
+
+            panel.classList.remove("active");
+
+
+            const cards =
+                document.querySelectorAll(".service-card");
+
+
+            cards.forEach(function(card) {
+
+                card.classList.remove("selected");
+
+            });
+
+        }
+
+
+
+        /*
+        ========================================================
+        GET FORM DATA
+        ========================================================
+        */
+
+        function getFormData() {
+
+            const name =
+                document.getElementById("clientName").value.trim();
+
+
+            const business =
+                document.getElementById("businessName").value.trim();
+
+
+            const email =
+                document.getElementById("clientEmail").value.trim();
+
+
+            const description =
+                document.getElementById("projectDescription").value.trim();
+
+
+            if (!name) {
+
+                alert("Please enter your name.");
+
+                return null;
+
+            }
+
+
+            if (!description) {
+
+                alert("Please describe what you need.");
+
+                return null;
+
+            }
+
+
+            return {
+
+                name: name,
+
+                business: business,
+
+                email: email,
+
+                description: description,
+
+                service: selectedService
+
+            };
+
+        }
+
+
+
+        /*
+        ========================================================
+        SEND WHATSAPP
+        ========================================================
+        */
+
+        function sendWhatsApp() {
+
+            const data = getFormData();
+
+
+            if (!data) {
+                return;
+            }
+
+
+            const message =
+                `Hello Stanley,
+
+I would like to enquire about your ${data.service} service.
+
+Name: ${data.name}
+Business: ${data.business || "Not provided"}
+Email: ${data.email || "Not provided"}
+
+Project details:
+${data.description}
+
+I found you through STANLEY MUNYAO.TECH.`;
+
+
+
+            const whatsappURL =
+                "https://wa.me/254759916552?text=" +
+                encodeURIComponent(message);
+
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+        }
+
+
+
+        /*
+        ========================================================
+        SEND EMAIL
+        ========================================================
+        */
+
+        function sendEmail() {
+
+            const data = getFormData();
+
+
+            if (!data) {
+                return;
+            }
+
+
+            const subject =
+                `Project Enquiry - ${data.service}`;
+
+
+            const body =
+                `Hello Stanley,
+
+I would like to enquire about your ${data.service} service.
+
+Name: ${data.name}
+Business: ${data.business || "Not provided"}
+Email: ${data.email || "Not provided"}
+
+Project details:
+${data.description}
+
+I found you through STANLEY MUNYAO.TECH.`;
+
+
+            const emailURL =
+                "mailto:stanleymunyao42@gmail.com" +
+                "?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                encodeURIComponent(body);
+
+
+            window.location.href =
+                emailURL;
+
+        }
+
+
+
+        /*
+        ========================================================
+        SMOOTH INTERNAL NAVIGATION
+        ========================================================
+        */
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+
+            link.addEventListener("click", function(event) {
+
+                const targetID =
+                    this.getAttribute("href");
+
+
+                const target =
+                    document.querySelector(targetID);
+
+
+                if (target) {
+
+                    event.preventDefault();
+
+
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
