@@ -86,3 +86,4 @@
 .closing-actions .btn-outline{border-color:rgba(255,255,255,.4);color:#fff}
 .closing-actions .btn-outline:hover{background:#fff;color:var(--dark)}
 @media(max-width:900px){.project-index{grid-template-columns:1fr;gap:26px;padding:28px}.closing-cta{grid-template-columns:1fr;padding:34px}.closing-actions{flex-direction:row;flex-wrap:wrap;min-width:0}}
+/* Hero redesign additions */.hero-expertise{display:flex;flex-wrap:wrap;gap:9px}.hero-expertise span{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:#d6e5ff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 14px;background:rgba(255,255,255,.06)}.hero-location{display:flex;align-items:center;gap:9px;margin-top:26px;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.65)}.hero-location b{width:7px;height:7px;border-radius:50%;background:#42f0d6;display:inline-block;box-shadow:0 0 0 4px rgba(66,240,214,.14)}.hero-photo-frame{margin:0}
