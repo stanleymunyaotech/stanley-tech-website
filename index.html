@@ -5,399 +5,1362 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17221D">
   <meta name="author" content="Stanley Munyao">
-  <meta name="description" content="Stanley Munyao builds professional websites, practical software systems and data solutions for businesses and organisations in Nairobi, Kenya.">
-  <title>Stanley Munyao Tech | Technology, Data &amp; Software</title>
+  <meta name="description" content="Stanley Munyao builds practical websites, software systems and data solutions in Nairobi, Kenya. Explore selected projects, skills and services.">
+  <title>Stanley Munyao Tech | Software, Data &amp; Digital Solutions</title>
   <link rel="canonical" href="https://stanleymunyaotech.github.io/stanley-tech-website/">
+
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Stanley Munyao Tech">
-  <meta property="og:title" content="Stanley Munyao Tech | Technology built for real-world challenges">
-  <meta property="og:description" content="Stanley Munyao builds professional websites, practical software systems and data solutions for businesses and organisations in Nairobi, Kenya.">
+  <meta property="og:title" content="Stanley Munyao Tech | Software, Data &amp; Digital Solutions">
+  <meta property="og:description" content="Practical websites, software systems and data solutions by Stanley Munyao in Nairobi, Kenya.">
   <meta property="og:url" content="https://stanleymunyaotech.github.io/stanley-tech-website/">
   <meta property="og:image" content="https://stanleymunyaotech.github.io/stanley-tech-website/assets/images/stanley-munyao-portrait.webp">
-  <meta name="twitter:image" content="https://stanleymunyaotech.github.io/stanley-tech-website/assets/images/stanley-munyao-portrait.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Stanley Munyao Tech | Technology built for real-world challenges">
-  <meta name="twitter:description" content="Stanley Munyao builds professional websites, practical software systems and data solutions for businesses and organisations in Nairobi, Kenya.">
+  <meta name="twitter:title" content="Stanley Munyao Tech">
+  <meta name="twitter:description" content="Software, data and practical digital solutions in Nairobi, Kenya.">
+  <meta name="twitter:image" content="https://stanleymunyaotech.github.io/stanley-tech-website/assets/images/stanley-munyao-portrait.webp">
+
   <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/creative-technology.css">
-  <link rel="stylesheet" href="css/editorial.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Stanley Munyao Tech",
-  "url": "https://stanleymunyaotech.github.io/stanley-tech-website/",
-  "logo": "https://stanleymunyaotech.github.io/stanley-tech-website/assets/favicon/favicon-512.png",
-  "image": "https://stanleymunyaotech.github.io/stanley-tech-website/assets/images/stanley-munyao-portrait.webp",
-  "description": "Independent technology practice in Nairobi, Kenya building professional websites, practical software systems and data analytics solutions.",
-  "founder": { "@type": "Person", "name": "Stanley Munyao" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
-  "areaServed": "Kenya",
-  "email": "stanleymunyao42@gmail.com",
-  "sameAs": [
-    "https://linkedin.com/in/stanley-munyao",
-    "https://github.com/stanleymunyaotech"
-  ],
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Analytics & Reporting" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design & Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Software & Business Systems" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow Automation" } }
-  ]
-}
-</script>
+
+  <style>
+    :root {
+      --ink: #17221d;
+      --ink-soft: #34433b;
+      --muted: #68766e;
+      --green: #16a36a;
+      --green-dark: #08754a;
+      --mint: #edf7f1;
+      --cream: #fbfcfa;
+      --white: #fff;
+      --line: #dce4de;
+      --dark: #17221d;
+      --max: 1180px;
+      --shadow: 0 18px 48px rgba(23, 34, 29, .09);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+      background: var(--cream);
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font: 400 16px/1.7 Inter, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--green);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 500;
+      top: 10px;
+      left: -9999px;
+      padding: 12px 16px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      color: var(--green-dark);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px 19px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      font-size: .87rem;
+      font-weight: 700;
+      line-height: 1.25;
+      transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .button-primary:hover {
+      background: var(--green-dark);
+    }
+
+    .button-outline {
+      border-color: rgba(255,255,255,.45);
+      color: var(--white);
+    }
+
+    .button-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.09);
+    }
+
+    .button-dark-outline {
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .button-dark-outline:hover {
+      border-color: var(--green);
+      background: var(--mint);
+      color: var(--green-dark);
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      height: 78px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251,252,250,.96);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      min-width: max-content;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      background: var(--ink);
+      color: var(--white);
+      font: 800 .82rem Manrope, sans-serif;
+      letter-spacing: -.04em;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      color: var(--ink);
+      font: 800 .75rem/1.25 Manrope, sans-serif;
+      letter-spacing: .055em;
+    }
+
+    .brand-text small {
+      margin-top: 5px;
+      color: var(--muted);
+      font: 700 .52rem/1.3 Inter, sans-serif;
+      letter-spacing: .12em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(12px, 1.8vw, 24px);
+    }
+
+    .nav-links a {
+      color: #536158;
+      font-size: .79rem;
+      font-weight: 600;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      color: var(--green-dark);
+    }
+
+    .header-cta {
+      min-height: 42px;
+      padding: 10px 14px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: .78rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 17px;
+      height: 2px;
+      background: var(--ink);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(72px, 9vw, 122px) 0 28px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      z-index: 0;
+      border: 1px solid rgba(188, 230, 204, .11);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero::before {
+      top: -360px;
+      right: -80px;
+      width: 850px;
+      height: 850px;
+    }
+
+    .hero::after {
+      top: -250px;
+      right: 28px;
+      width: 630px;
+      height: 630px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(290px, .88fr);
+      align-items: center;
+      gap: clamp(38px, 7vw, 92px);
+    }
+
+    .hero-copy {
+      max-width: 680px;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 22px;
+      color: #d3e2d8;
+      font-size: .76rem;
+      font-weight: 600;
+      letter-spacing: .035em;
+    }
+
+    .availability i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #5bd392;
+      box-shadow: 0 0 0 5px rgba(91,211,146,.14);
+    }
+
+    .hero .eyebrow {
+      color: #a5dfbb;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 20px 0;
+      color: var(--white);
+      font: 700 clamp(2.75rem, 6vw, 5.4rem)/1.03 Manrope, sans-serif;
+      letter-spacing: -.065em;
+    }
+
+    .hero h1 em {
+      color: #71d79c;
+      font-style: normal;
+    }
+
+    .hero-intro {
+      max-width: 570px;
+      margin-bottom: 0;
+      color: #d0dcd4;
+      font-size: clamp(1rem, 1.4vw, 1.08rem);
+      line-height: 1.85;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .hero-location {
+      margin: 25px 0 0;
+      color: #afc1b5;
+      font-size: .77rem;
+      letter-spacing: .05em;
+    }
+
+    .hero-art {
+      position: relative;
+      display: grid;
+      width: min(100%, 430px);
+      aspect-ratio: 1 / 1;
+      justify-self: end;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.14);
+      background:
+        radial-gradient(circle at 50% 50%, rgba(39,83,61,.34), transparent 48%),
+        repeating-radial-gradient(circle at 50% 50%, transparent 0 40px, rgba(255,255,255,.1) 41px 42px);
+    }
+
+    .hero-art::before,
+    .hero-art::after {
+      position: absolute;
+      inset: 14%;
+      border: 1px solid rgba(128,217,163,.35);
+      content: "";
+      transform: rotate(35deg);
+    }
+
+    .hero-art::after {
+      inset: 25%;
+      transform: rotate(70deg);
+    }
+
+    .hero-core {
+      width: 36%;
+      aspect-ratio: 1;
+      background: linear-gradient(140deg, #d8f4e0, #32b374 58%, #0b5738);
+      clip-path: polygon(50% 0, 95% 27%, 81% 78%, 50% 100%, 13% 80%, 0 34%);
+      filter: drop-shadow(0 22px 26px rgba(0,0,0,.32));
+    }
+
+    .hero-art-label {
+      position: absolute;
+      right: 18px;
+      bottom: 17px;
+      left: 18px;
+      color: #c5d7cb;
+      font: 600 .64rem/1.5 monospace;
+      letter-spacing: .13em;
+      text-align: center;
+    }
+
+    .hero-bottom {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: clamp(48px, 7vw, 82px);
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.17);
+      color: #aabbb0;
+      font-size: .67rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    /* Shared sections */
+    .section {
+      padding: clamp(68px, 8vw, 104px) 0;
+    }
+
+    .section-soft {
+      background: #f0f5f1;
+    }
+
+    .section-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 38px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+      margin: 13px 0 0;
+      font: 700 clamp(2rem, 4vw, 3.5rem)/1.09 Manrope, sans-serif;
+      letter-spacing: -.055em;
+    }
+
+    .section-heading h2 em {
+      color: var(--green-dark);
+      font-style: normal;
+    }
+
+    .section-heading > p {
+      max-width: 470px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .section-dark .eyebrow {
+      color: #a5dfbb;
+    }
+
+    .section-dark .section-heading h2 em {
+      color: #71d79c;
+    }
+
+    .section-dark .section-heading > p {
+      color: #c1d0c6;
+    }
+
+    /* Services */
+    .service-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .service-row {
+      display: grid;
+      grid-template-columns: 70px minmax(200px, .8fr) minmax(260px, 1.2fr) auto;
+      align-items: start;
+      gap: 22px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .service-number {
+      color: #8a9890;
+      font: 600 .78rem monospace;
+    }
+
+    .service-row h3 {
+      margin: 0;
+      font: 700 1.08rem/1.35 Manrope, sans-serif;
+      letter-spacing: -.025em;
+    }
+
+    .service-row p {
+      max-width: 510px;
+      margin: 0;
+      color: var(--muted);
+      font-size: .91rem;
+      line-height: 1.75;
+    }
+
+    .service-row a {
+      color: var(--green-dark);
+      font-size: .84rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Selected project images */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.15);
+      background: #202f27;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(113,215,156,.7);
+    }
+
+    .project-image {
+      position: relative;
+      overflow: hidden;
+      background: #15251e;
+      aspect-ratio: 16 / 9;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform .45s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.025);
+    }
+
+    .project-caption {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      padding: 6px 9px;
+      background: rgba(16,31,23,.88);
+      color: #fff;
+      font-size: .63rem;
+      letter-spacing: .03em;
+    }
+
+    .project-copy {
+      padding: 23px 24px 25px;
+    }
+
+    .project-type {
+      margin: 0 0 10px;
+      color: #91d8a9;
+      font-size: .66rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .project-copy h3 {
+      margin: 0 0 9px;
+      color: var(--white);
+      font: 700 1.3rem/1.25 Manrope, sans-serif;
+      letter-spacing: -.035em;
+    }
+
+    .project-copy p {
+      min-height: 56px;
+      margin: 0 0 17px;
+      color: #d1dbd4;
+      font-size: .9rem;
+      line-height: 1.75;
+    }
+
+    .project-copy a {
+      color: #8fdfa9;
+      font-size: .84rem;
+      font-weight: 700;
+    }
+
+    /* Skills */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .skill-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .skill-card h3 {
+      margin-bottom: 8px;
+      font: 700 1rem Manrope, sans-serif;
+    }
+
+    .skill-card p {
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.75;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tags span {
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: .72rem;
+    }
+
+    .education {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 26px;
+      padding: 19px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .education small,
+    .education strong,
+    .education span {
+      display: block;
+    }
+
+    .education small {
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+    }
+
+    .education strong {
+      font: 700 .95rem Manrope, sans-serif;
+    }
+
+    .education span {
+      color: var(--muted);
+      font-size: .83rem;
+    }
+
+    /* Approach */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .process-card {
+      padding: 22px;
+      border-top: 1px solid rgba(255,255,255,.3);
+    }
+
+    .process-card b {
+      color: #7ddba0;
+      font: 600 .75rem monospace;
+    }
+
+    .process-card h3 {
+      margin: 16px 0 7px;
+      color: var(--white);
+      font: 700 1rem Manrope, sans-serif;
+    }
+
+    .process-card p {
+      margin: 0;
+      color: #c6d2ca;
+      font-size: .84rem;
+      line-height: 1.75;
+    }
+
+    /* Journal and closing */
+    .journal-empty {
+      max-width: 730px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--green);
+      background: var(--white);
+    }
+
+    .journal-empty h3 {
+      margin-bottom: 8px;
+      font: 700 1.2rem Manrope, sans-serif;
+    }
+
+    .journal-empty p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .closing {
+      display: grid;
+      grid-template-columns: 1fr .85fr;
+      align-items: center;
+      gap: 40px;
+      padding: clamp(28px, 5vw, 55px);
+      background: var(--mint);
+    }
+
+    .closing h2 {
+      margin: 14px 0 0;
+      font: 700 clamp(2rem, 4vw, 3.5rem)/1.08 Manrope, sans-serif;
+      letter-spacing: -.055em;
+    }
+
+    .closing h2 em {
+      color: var(--green-dark);
+      font-style: normal;
+    }
+
+    .closing p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 54px 0 22px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 35px;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font: 800 .8rem Manrope, sans-serif;
+      letter-spacing: .06em;
+    }
+
+    .footer-brand span {
+      display: block;
+      margin-top: 8px;
+      color: #adbbb1;
+      font: 400 .82rem/1.7 Inter, sans-serif;
+      letter-spacing: 0;
+    }
+
+    .footer-label {
+      display: block;
+      margin-bottom: 13px;
+      color: #9be0b2;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 9px;
+      color: #d1dbd4;
+      font-size: .83rem;
+    }
+
+    .footer-links a:hover {
+      color: #8fdfa9;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.18);
+      color: #adbbb1;
+      font-size: .74rem;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        gap: 12px;
+      }
+
+      .header-cta {
+        display: none;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        z-index: 110;
+        inset: 78px 0 auto;
+        display: none;
+        max-height: calc(100vh - 78px);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        overflow-y: auto;
+        padding: 12px 24px 24px;
+        border-bottom: 1px solid var(--line);
+        background: var(--cream);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 1rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .hero-art {
+        width: min(78vw, 360px);
+        justify-self: center;
+        grid-row: 1;
+      }
+
+      .hero-copy {
+        grid-row: 2;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading > p {
+        margin-top: 16px;
+      }
+
+      .service-row {
+        grid-template-columns: 42px 1fr auto;
+        gap: 12px;
+      }
+
+      .service-row p {
+        grid-column: 2 / 4;
+      }
+
+      .service-row a {
+        grid-column: 2 / 4;
+      }
+
+      .skill-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .closing {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(var(--max), calc(100% - 36px));
+      }
+
+      .brand-text small {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.65rem, 12vw, 4rem);
+      }
+
+      .hero-bottom {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .section {
+        padding: 62px 0;
+      }
+
+      .service-row {
+        grid-template-columns: 34px 1fr;
+      }
+
+      .service-row p,
+      .service-row a {
+        grid-column: 2;
+      }
+
+      .project-grid,
+      .skill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-copy p {
+        min-height: 0;
+      }
+
+      .education,
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid > :first-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="Stanley Munyao Tech home"><span class="brand-mark">SM</span><span class="brand-word"><span class="brand-name">STANLEY MUNYAO <span class="brand-tech">TECH</span></span><small>SOFTWARE · DATA · DIGITAL SOLUTIONS</small></span></a>
-    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Work</a>
-      <a href="blog.html">Journal</a>
-      <a href="skills.html">Skills</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-small btn-dark" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<main id="main">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Stanley Munyao Tech home">
+        <span class="brand-mark">SM</span>
+        <span class="brand-text">
+          STANLEY MUNYAO TECH
+          <small>SOFTWARE · DATA · DIGITAL SOLUTIONS</small>
+        </span>
+      </a>
 
-<!-- HERO -->
-<section class="hero hero-home">
-  <div class="container hero-grid">
-    <div class="hero-copy-block">
-      <p class="hero-availability"><i aria-hidden="true"></i> Open to full-time roles · Available for selected projects</p>
-      <p class="eyebrow">NAIROBI, KENYA — SOFTWARE · DATA · SYSTEMS</p>
-      <h1>Building software and data systems that make business <em>clearer.</em></h1>
-      <p class="hero-intro">I’m an emerging technology professional working across software development, web development and data analytics. I build practical digital tools and make business information easier to understand.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="portfolio.html">Explore my work</a>
-        <a class="btn btn-outline-light" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-expertise" aria-label="Areas of expertise">
-        <span>Software development</span><span>Web development</span><span>Data analytics</span><span>Business intelligence</span><span>Digital systems</span>
-      </div>
-      <p class="hero-location"><b aria-hidden="true"></b> Nairobi, Kenya</p>
-    </div>
-    <div class="hero-visual" aria-hidden="true"><div class="editorial-geometry"><span class="geometry-core"></span><span class="geometry-label">FORM · FUNCTION · CLARITY</span></div></div>
-  </div>
-  <div class="hero-bottom container">
-    <span>Thoughtful systems. Useful outcomes.</span>
-    <span>Scroll to explore ↓</span>
-  </div>
-</section>
-
-<!-- WHAT I DO -->
-<section class="section section-intro">
-  <div class="container">
-    <div class="section-heading split-heading">
-      <div>
-        <span class="eyebrow">WHAT I DO</span>
-        <h2>Five connected disciplines.<br><em>One practical approach.</em></h2>
-      </div>
-      <p>I bring together data analytics, software development, web design and workflow automation. Every project starts with the same principles: understand the need, choose the right approach and build something useful, clear and maintainable.</p>
-    </div>
-    <div class="service-preview-grid">
-      <article class="service-preview">
-        <span class="number">01</span>
-        <div>
-          <span class="service-symbol">↗</span>
-          <h3>Data analytics</h3>
-          <p>Cleaning data, measuring performance and presenting clear reports and dashboards so decisions can be based on evidence rather than guesswork.</p>
-          <a href="services.html#data" class="btn btn-outline btn-small">Explore Data Services <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">02</span>
-        <div>
-          <span class="service-symbol">⌘</span>
-          <h3>Software &amp; systems</h3>
-          <p>Building small, practical applications and internal tools that reduce repetitive work and keep everyday operations organised.</p>
-          <a href="services.html#software" class="btn btn-outline btn-small">Explore Software Services <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">03</span>
-        <div>
-          <span class="service-symbol">▤</span>
-          <h3>Web development</h3>
-          <p>Designing and building professional, responsive websites that explain what an organisation does and make it easy for people to get in touch.</p>
-          <a href="services.html#web" class="btn btn-outline btn-small">Explore Web Services <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">04</span>
-        <div>
-          <span class="service-symbol">⤴</span>
-          <h3>Workflow automation</h3>
-          <p>Streamlining repeatable digital tasks and connecting everyday tools so less time is spent moving information by hand.</p>
-          <a href="services.html#automation" class="btn btn-outline btn-small">Explore Automation Services <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">05</span>
-        <div>
-          <span class="service-symbol">⌁</span>
-          <h3>Business intelligence</h3>
-          <p>Turning performance data into clear dashboards and reports that help people see what is happening and choose their next step.</p>
-          <a href="services.html#data" class="btn btn-outline btn-small">Explore dashboards <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SELECTED WORK -->
-<section class="section section-ink">
-  <div class="container">
-    <div class="section-heading section-heading-light">
-      <div>
-        <span class="eyebrow">MY PROJECTS</span>
-        <h2>Selected work.<br><em>Practical solutions.</em></h2>
-      </div>
-      <p>A selection of client work, independent projects and hands-on analysis. Each project is labelled clearly so you can see what was delivered, what is personal work and what is still evolving.</p>
-    </div>
-
-    <div class="selected-work">
-      <div class="selected-work-list" aria-label="Featured projects">
-        <button class="selected-work-item" type="button" data-work-image="assets/images/projects/japres-homepage.webp" data-work-alt="JAPRES Academy public homepage" data-work-title="JAPRES Academy" data-work-description="Education website, student portal and administrative tools for an education client." aria-pressed="true"><span>01</span><strong>JAPRES Academy</strong><small>Web · Client</small></button>
-        <button class="selected-work-item" type="button" data-work-image="assets/images/projects/excel-dashboard.webp" data-work-alt="Excel sales dashboard concept using sample data" data-work-title="Sales Data Analysis" data-work-description="An 800-order Kenyan retail sales dataset explored in Excel. Dashboard imagery is labelled as concept work." aria-pressed="false"><span>02</span><strong>Sales Data Analysis</strong><small>Data · Independent</small></button>
-        <button class="selected-work-item" type="button" data-work-image="assets/images/projects/aldermere-site.webp" data-work-alt="Aldermere Analytics website" data-work-title="Aldermere Analytics" data-work-description="A personal brand and website concept, created as an independent project." aria-pressed="false"><span>03</span><strong>Aldermere Analytics</strong><small>Web · Personal</small></button>
-        <button class="selected-work-item" type="button" data-work-image="assets/images/projects/shoppro-landing.webp" data-work-alt="ShopPro Cloud start screen with test data" data-work-title="ShopPro Cloud" data-work-description="A shop management software project in development. Interface captures use test data." aria-pressed="false"><span>04</span><strong>ShopPro Cloud</strong><small>Software · In development</small></button>
-      </div>
-      <div class="selected-work-preview"><a href="japres-academy.html"><img id="workPreviewImage" src="assets/images/projects/japres-homepage.webp" alt="JAPRES Academy public homepage" width="1600" height="744" loading="lazy"></a><p id="workPreviewDescription">Education website, student portal and administrative tools for an education client.</p><a id="workPreviewLink" class="text-link" href="japres-academy.html">View case study ↗</a></div>
-    </div>
-    <div class="home-project-grid" hidden>
-      <article class="home-project home-project-large">
-        <a class="project-visual-link" href="japres-academy.html">
-          <figure class="shot">
-            <img src="assets/images/projects/japres-homepage.webp" alt="JAPRES Academy public homepage" width="1600" height="900" loading="lazy">
-            <figcaption>JAPRES Academy homepage</figcaption>
-          </figure>
-        </a>
-        <div class="project-card-copy">
-          <span class="eyebrow">CLIENT PROJECT · WEB &amp; SYSTEMS</span>
-          <h3>JAPRES Academy</h3>
-          <p>A public school website paired with a student portal and an administrative experience for an education client.</p>
-          <a href="japres-academy.html" class="btn btn-outline-light btn-small">View JAPRES Academy Case Study <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-
-      <article class="home-project">
-        <a class="project-visual-link" href="sales-data-analysis.html">
-          <figure class="shot">
-            <span class="tag-sample">Concept mockup · sample data</span>
-            <img src="assets/images/projects/excel-dashboard.webp" alt="Excel sales dashboard concept with sample data" width="1600" height="900" loading="lazy">
-            <figcaption>Excel dashboard concept</figcaption>
-          </figure>
-        </a>
-        <div class="project-card-copy">
-          <span class="eyebrow">DATA ANALYTICS · EXCEL</span>
-          <h3>Sales Data Analysis</h3>
-          <p>An 800-order Kenyan retail dataset explored in Excel through data preparation, PivotTables, performance measures and clear reporting.</p>
-          <a href="sales-data-analysis.html" class="btn btn-outline-light btn-small">View Sales Analysis Case Study <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-
-      <article class="home-project">
-        <a class="project-visual-link" href="aldermere-analytics.html">
-          <figure class="shot">
-            <img src="assets/images/projects/aldermere-site.webp" alt="Aldermere Analytics website concept" width="1600" height="900" loading="lazy">
-            <figcaption>Aldermere Analytics website</figcaption>
-          </figure>
-        </a>
-        <div class="project-card-copy">
-          <span class="eyebrow">PERSONAL BRAND · WEB CONCEPT</span>
-          <h3>Aldermere Analytics</h3>
-          <p>A self-initiated analytics brand and website project, developed to explore positioning, service presentation and user journeys.</p>
-          <a href="aldermere-analytics.html" class="btn btn-outline-light btn-small">View Aldermere Analytics Details <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-    </div>
-
-    <div class="section-bottom-link">
-      <a href="portfolio.html" class="btn btn-outline-light">View all projects <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS & EDUCATION -->
-<section class="section" id="skills-education">
-  <div class="container">
-    <div class="section-heading split-heading">
-      <div>
-        <span class="eyebrow">SKILLS &amp; EDUCATION</span>
-        <h2>Software, data<br><em>and the web.</em></h2>
-      </div>
-      <p>I am studying Economics and Statistics at the University of Nairobi. That analytical foundation complements the practical skills I develop through software, web and data projects.</p>
-    </div>
-
-    <div class="skills-strip">
-      <article class="strip-card">
-        <h3>Data analytics</h3>
-        <p>I prepare data, explore patterns and present results in reports and dashboards that are easy to read and act on.</p>
-        <div class="skill-tags">
-          <span>Microsoft Excel</span>
-          <span>SQL</span>
-          <span>Power BI</span>
-          <span>Data cleaning</span>
-          <span>Business intelligence</span>
-        </div>
-      </article>
-      <article class="strip-card">
-        <h3>Programming &amp; software</h3>
-        <p>I write code to build applications, business systems and automations that save time and reduce manual work.</p>
-        <div class="skill-tags">
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>Business systems</span>
-          <span>Automation</span>
-          <span>System design</span>
-        </div>
-      </article>
-      <article class="strip-card">
-        <h3>Web development</h3>
-        <p>I design and build websites that look professional, work well on every device, and present information clearly.</p>
-        <div class="skill-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Responsive design</span>
-          <span>Forms &amp; integrations</span>
-        </div>
-      </article>
-    </div>
-
-    <div class="edu-bar">
-      <div>
-        <small>EDUCATION</small>
-        <strong>Bachelor of Economics and Statistics</strong>
-        <span>University of Nairobi</span>
-      </div>
-      <a class="btn btn-primary" href="skills.html">Explore Skills &amp; Education <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- HOW I WORK (short process) -->
-<section class="section">
-  <div class="container">
-    <div class="section-heading split-heading">
-      <div>
-        <span class="eyebrow">HOW I WORK</span>
-        <h2>Clear scope.<br><em>Clear results.</em></h2>
-      </div>
-      <p>Every project starts with a conversation. Scope, timeline and cost are agreed in writing before work begins so expectations stay realistic on both sides.</p>
-    </div>
-    <div class="service-preview-grid">
-      <article class="service-preview">
-        <span class="number">01</span>
-        <div>
-          <h3>Conversation</h3>
-          <p>Share the challenge, the people involved and the outcome you need. This is where the real requirement becomes clear.</p>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">02</span>
-        <div>
-          <h3>Scope &amp; quote</h3>
-          <p>Agree on deliverables, exclusions, timeline and a written quotation before any development starts.</p>
-        </div>
-      </article>
-      <article class="service-preview">
-        <span class="number">03</span>
-        <div>
-          <h3>Build, review &amp; handover</h3>
-          <p>Develop the solution, review milestones together, test the result and hand over clear documentation.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- JOURNAL -->
-<section class="section section-soft">
-  <div class="container">
-    <div class="section-heading split-heading">
-      <div>
-        <span class="eyebrow">FROM THE JOURNAL</span>
-        <h2>Ideas, insights<br><em>and perspectives.</em></h2>
-      </div>
-      <p>Practical writing on technology, data, software and business — focused on clear explanations, grounded examples and ideas that can be put to use.</p>
-    </div>
-    <div class="article-grid" id="featuredPosts">
-      <div class="empty-state">Featured articles will appear here after they are reviewed and published through the editorial dashboard.</div>
-    </div>
-    <div class="section-bottom-link">
-      <a href="blog.html" class="btn btn-outline-light">Explore the journal <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- CLOSING CTA -->
-<section class="section">
-  <div class="container">
-    <div class="closing-cta">
-      <div>
-        <span class="eyebrow">HAVE A PROJECT IN MIND?</span>
-        <h2>Let's make something<br><em>useful happen.</em></h2>
-      </div>
-      <div>
-        <p>Whether you need a professional website, a practical business system, or help turning your data into clear reports and dashboards, I am available to discuss the scope and approach.</p>
-        <a href="contact.html" class="btn btn-primary">Start a conversation <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-main">
-      <div class="footer-brand-block">
-        <a class="brand brand-footer" href="index.html"><span class="brand-mark">SM</span><span class="brand-word"><span class="brand-name">STANLEY MUNYAO <span class="brand-tech">TECH</span></span><small>SOFTWARE · DATA · DIGITAL SOLUTIONS</small></span></a>
-        <p>Building websites, software systems and data-driven solutions for practical challenges.</p>
-      </div>
-      <div class="footer-nav-group">
-        <span class="footer-label">Explore</span>
-        <a href="portfolio.html">Selected work</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Journal</a>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="blog.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="button header-cta" href="contact.html">
+        Start a conversation <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation"
+        aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="availability"><i aria-hidden="true"></i> Open to full-time roles · Available for selected projects</p>
+          <p class="eyebrow">Nairobi, Kenya — Software · Data · Systems</p>
+          <h1>Building software and data systems that make business <em>clearer.</em></h1>
+          <p class="hero-intro">
+            I’m an emerging technology professional working across software development,
+            web development and data analytics. I build practical digital tools and make
+            business information easier to understand.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="portfolio.html">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="contact.html">Let’s talk</a>
+          </div>
+          <p class="hero-location">Based in Nairobi, Kenya · Open to full-time opportunities</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <span class="hero-core"></span>
+          <span class="hero-art-label">FORM · FUNCTION · CLARITY</span>
+        </div>
       </div>
-      <div class="footer-nav-group">
-        <span class="footer-label">Connect</span>
-        <a href="mailto:stanleymunyao42@gmail.com">Email <span aria-hidden="true">↗</span></a>
-        <a href="https://linkedin.com/in/stanley-munyao" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/stanleymunyaotech" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <a href="https://wa.me/254759916552" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+
+      <div class="container hero-bottom">
+        <span>Thoughtful systems. Useful outcomes.</span>
+        <a href="#services">Scroll to explore ↓</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WHAT I DO</p>
+            <h2>Five connected disciplines.<br><em>One practical approach.</em></h2>
+          </div>
+          <p>I bring together software, websites and data work. Each project starts with the actual need, then moves through a clear scope and a solution built for its intended use.</p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row">
+            <span class="service-number">01</span>
+            <h3>Web design &amp; development</h3>
+            <p>Responsive websites with clear content, careful layouts and practical contact paths.</p>
+            <a href="services.html#web">Explore service ↗</a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">02</span>
+            <h3>Software &amp; systems</h3>
+            <p>Small applications and business tools designed around everyday processes and clear requirements.</p>
+            <a href="services.html#software">Explore service ↗</a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">03</span>
+            <h3>Data analytics</h3>
+            <p>Data preparation, summary measures and analysis that help answer practical business questions.</p>
+            <a href="services.html#data">Explore service ↗</a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">04</span>
+            <h3>Business intelligence</h3>
+            <p>Readable reports and dashboards to help make performance information easier to review.</p>
+            <a href="services.html#data">Explore service ↗</a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">05</span>
+            <h3>Workflow automation</h3>
+            <p>Practical ways to reduce repetitive steps and connect tools where the workflow supports it.</p>
+            <a href="services.html#automation">Explore service ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section section-dark" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED PROJECTS</p>
+            <h2>Work with a clear<br><em>purpose and scope.</em></h2>
+          </div>
+          <p>Client delivery, independent work and projects in development. Screenshots and descriptions identify concepts and test data clearly.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-image" href="portfolio.html#japres">
+              <img src="assets/images/projects/japres-homepage.webp" alt="JAPRES Academy public website homepage" width="1600" height="744" loading="lazy">
+              <span class="project-caption">Client project · Live website</span>
+            </a>
+            <div class="project-copy">
+              <p class="project-type">Web · Education</p>
+              <h3>JAPRES Academy</h3>
+              <p>A public school website supported by a student portal and administrative tools.</p>
+              <a href="portfolio.html#japres">View project details ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="portfolio.html#sales">
+              <img src="assets/images/projects/excel-dashboard.webp" alt="Concept Excel sales dashboard using sample data" width="1600" height="900" loading="lazy">
+              <span class="project-caption">Concept dashboard · Sample data</span>
+            </a>
+            <div class="project-copy">
+              <p class="project-type">Data · Excel dashboard</p>
+              <h3>Sales Data Analysis</h3>
+              <p>An Excel analysis of 800 Kenyan retail orders, with pricing, product and revenue insights.</p>
+              <a href="portfolio.html#sales">View sales analysis ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="portfolio.html#aldermere">
+              <img src="assets/images/projects/aldermere-site.webp" alt="Aldermere Analytics website homepage" width="1600" height="751" loading="lazy">
+              <span class="project-caption">Client project · Analytics website</span>
+            </a>
+            <div class="project-copy">
+              <p class="project-type">Web · Analytics</p>
+              <h3>Aldermere Analytics</h3>
+              <p>A professional website presenting Aldermere Analytics services and insights.</p>
+              <a href="portfolio.html#aldermere">View project details ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="portfolio.html#shop">
+              <img src="assets/images/projects/shoppro-landing.webp" alt="ShopPro start screen using test data" width="1600" height="843" loading="lazy">
+              <span class="project-caption">In development · Test data</span>
+            </a>
+            <div class="project-copy">
+              <p class="project-type">Software · In development</p>
+              <h3>ShopPro Cloud</h3>
+              <p>A shop management system project. Current screenshots show interface work using test data.</p>
+              <a href="portfolio.html#shop">View project details ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-link">
+          <a class="button button-outline" href="portfolio.html">View all projects <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="section" id="about">
+      <div class="container profile-grid">
+        <div class="profile-art" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <small>SOFTWARE · DATA · SYSTEMS</small>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Analytical thinking.<br><em>Practical technology.</em></h2>
+          <p>I’m Stanley Munyao, an emerging technology professional based in Nairobi. My work brings together software development, web development and data analysis, with a focus on building useful solutions and explaining them clearly.</p>
+          <div class="profile-facts">
+            <div><small>EDUCATION</small><strong>Bachelor of Economics and Statistics</strong><span>University of Nairobi</span></div>
+            <div><small>TECHNICAL FOCUS</small><strong>Software · Web · Data</strong><span>Practical projects and continued learning</span></div>
+            <div><small>LOCATION</small><strong>Nairobi, Kenya</strong><span>Open to full-time opportunities</span></div>
+          </div>
+          <a class="text-link" href="about.html">More about me ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TOOLS &amp; SKILLS</p>
+            <h2>Building capability<br><em>through practice.</em></h2>
+          </div>
+          <p>The groups below reflect the areas I work in and continue to develop. They are not percentage ratings or claims of expert-level ability.</p>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>Data analytics</h3>
+            <p>Preparing datasets, exploring measures and presenting findings clearly.</p>
+            <div class="tags"><span>Microsoft Excel</span><span>Data cleaning</span><span>KPI reporting</span><span>Data visualisation</span></div>
+          </article>
+          <article class="skill-card">
+            <h3>Software development</h3>
+            <p>Building practical applications and structured digital workflows.</p>
+            <div class="tags"><span>JavaScript</span><span>Python</span><span>Supabase</span><span>System workflows</span></div>
+          </article>
+          <article class="skill-card">
+            <h3>Web development</h3>
+            <p>Creating responsive websites with clear layouts and usable navigation.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span></div>
+          </article>
+        </div>
+
+        <div class="education">
+          <div><small>EDUCATION</small><strong>Bachelor of Economics and Statistics</strong><span>University of Nairobi</span></div>
+          <a class="button button-dark-outline" href="skills.html">View skills &amp; education ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKING APPROACH -->
+    <section class="section section-dark" id="approach">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">HOW I WORK</p>
+            <h2>Clear scope.<br><em>Thoughtful delivery.</em></h2>
+          </div>
+          <p>Each project starts with the real need. Scope, timeline and cost are discussed before work begins so expectations remain clear.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card"><b>01</b><h3>Conversation</h3><p>Understand the challenge, intended users and outcome you need.</p></article>
+          <article class="process-card"><b>02</b><h3>Scope &amp; quote</h3><p>Agree on deliverables, boundaries, timing and a written quotation.</p></article>
+          <article class="process-card"><b>03</b><h3>Build &amp; review</h3><p>Develop in steps and review the important features as work progresses.</p></article>
+          <article class="process-card"><b>04</b><h3>Handover</h3><p>Test the agreed workflows and provide useful notes for using the result.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section section-soft" id="journal">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FROM THE JOURNAL</p>
+            <h2>Ideas, notes<br><em>and useful lessons.</em></h2>
+          </div>
+          <p>Writing on software, data and practical digital work. Published articles appear here after the Sanity journal is configured.</p>
+        </div>
+
+        <div class="journal-empty" id="featuredPosts">
+          <h3>New writing will appear here.</h3>
+          <p>The journal is prepared for published articles. Connect Sanity to display the latest posts on this page.</p>
+        </div>
+
+        <div class="section-link">
+          <a class="button button-dark-outline" href="blog.html">Visit the journal <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="container">
+        <div class="closing">
+          <div>
+            <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+            <h2>Let’s make something<br><em>useful happen.</em></h2>
+          </div>
+          <div>
+            <p>Tell me what you are trying to improve. We can discuss the need, a suitable scope and a practical next step.</p>
+            <a class="button button-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            STANLEY MUNYAO TECH
+            <span>Building websites, software systems and data solutions for practical challenges.</span>
+          </a>
+        </div>
+        <div>
+          <span class="footer-label">Explore</span>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="portfolio.html">Selected work</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Journal</a>
+          </nav>
+        </div>
+        <div>
+          <span class="footer-label">Connect</span>
+          <nav class="footer-links" aria-label="Contact links">
+            <a href="mailto:stanleymunyao42@gmail.com">Email ↗</a>
+            <a href="https://linkedin.com/in/stanley-munyao" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/stanleymunyaotech" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://wa.me/254759916552" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Stanley Munyao. All rights reserved.</span>
+        <span>Nairobi, Kenya · Software · Data · Systems</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span data-year></span> Stanley Munyao. All rights reserved.</span>
-      <span>Nairobi, Kenya · Independent technology practice</span>
-    </div>
-  </div>
-</footer>
-<script src="js/config.js"></script>
-<script src="js/script.js" defer></script>
-<script src="js/sanity.js" defer></script>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.nav-links');
+
+    if (menuButton && navigation) {
+      menuButton.addEventListener('click', () => {
+        const open = navigation.classList.toggle('open');
+        document.body.classList.toggle('menu-open', open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      });
+
+      navigation.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navigation.classList.remove('open');
+          document.body.classList.remove('menu-open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Open navigation');
+        });
+      });
+
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && navigation.classList.contains('open')) {
+          navigation.classList.remove('open');
+          document.body.classList.remove('menu-open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Open navigation');
+          menuButton.focus();
+        }
+      });
+    }
+
+    document.querySelectorAll('[data-year]').forEach(element => {
+      element.textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
 
