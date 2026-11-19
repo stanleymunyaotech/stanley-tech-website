@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17221D">
+  <meta name="author" content="Stanley Munyao">
+  <meta name="description" content="Explore selected software, web and data projects by Stanley Munyao, including an education platform, retail sales analysis, independent projects and software in development.">
+  <title>Portfolio | Selected Work by Stanley Munyao</title>
+  <link rel="canonical" href="https://stanleymunyaotech.github.io/stanley-tech-website/portfolio.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stanley Munyao Tech">
+  <meta property="og:title" content="Portfolio | Selected Work by Stanley Munyao">
+  <meta property="og:description" content="Selected web, software and data projects by Stanley Munyao.">
+  <meta property="og:url" content="https://stanleymunyaotech.github.io/stanley-tech-website/portfolio.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio | Selected Work by Stanley Munyao">
+  <meta name="twitter:description" content="Selected web, software and data projects by Stanley Munyao.">
+
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/creative-technology.css">
+  <link rel="stylesheet" href="css/editorial.css">
+
+  <style>
+    .work-overview-grid,
+    .work-card-grid,
+    .work-method-grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .work-overview-grid {
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .work-card-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .work-method-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .work-overview-grid article,
+    .work-card {
+      background: #fff;
+      border: 1px solid #dce4de;
+      padding: 24px;
+    }
+
+    .work-overview-grid article > span,
+    .work-card .eyebrow {
+      color: #08754a;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    .work-overview-grid h3,
+    .work-card h3,
+    .work-method-grid h3 {
+      font-family: Manrope, Arial, sans-serif;
+      letter-spacing: -.035em;
+    }
+
+    .work-overview-grid p,
+    .work-card p,
+    .work-method-grid p {
+      color: #67756d;
+    }
+
+    .work-overview-grid a,
+    .work-card .text-link {
+      color: #08754a;
+      font-weight: 700;
+    }
+
+    .work-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .work-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .work-card > div {
+      padding: 22px;
+    }
+
+    .work-method-grid article {
+      border-top: 1px solid #dce4de;
+      padding: 20px 8px;
+    }
+
+    .work-method-grid b {
+      color: #16a36a;
+      font: 700 .8rem monospace;
+    }
+
+    .project-metrics .project-section-copy {
+      max-width: 850px;
+      margin-top: 36px;
+    }
+
+    .project-metrics .metric-strip {
+      margin-top: 22px;
+    }
+
+    @media (max-width: 760px) {
+      .work-card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-method-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 420px) {
+      .work-method-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Stanley Munyao Tech",
+    "url": "https://stanleymunyaotech.github.io/stanley-tech-website/",
+    "logo": "https://stanleymunyaotech.github.io/stanley-tech-website/assets/favicon/favicon-512.png",
+    "image": "https://stanleymunyaotech.github.io/stanley-tech-website/assets/images/stanley-munyao-portrait.webp",
+    "description": "Independent technology practice in Nairobi, Kenya building professional websites, practical software systems and data analytics solutions.",
+    "founder": {
+      "@type": "Person",
+      "name": "Stanley Munyao"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "areaServed": "Kenya",
+    "email": "stanleymunyao42@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/stanley-munyao",
+      "https://github.com/stanleymunyaotech"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Stanley Munyao Tech home">
+      <span class="brand-mark">SM</span>
+      <span class="brand-word">
+        <span class="brand-name">STANLEY MUNYAO <span class="brand-tech">TECH</span></span>
+        <small>SOFTWARE · DATA · DIGITAL SOLUTIONS</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html" aria-current="page">Work</a>
+      <a href="blog.html">Journal</a>
+      <a href="skills.html">Skills</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-small btn-dark" href="contact.html">
+        Start a conversation <span aria-hidden="true">↗</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation"
+        aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <span class="eyebrow">SELECTED WORK</span>
+        <h1>Built with intention.<br><em>Presented honestly.</em></h1>
+        <p>Client delivery, independent brand work, data analysis and projects in development. Each case study makes the project scope and current status clear.</p>
+      </div>
+      <div class="page-hero-note">
+        <span class="note-mark">05</span>
+        <span>PROJECTS &amp; CASE STUDIES</span>
+        <strong>Client · Personal · In development</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT OVERVIEW -->
+  <section class="section work-overview" aria-labelledby="work-overview-title">
+    <div class="container">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">A QUICK OVERVIEW</span>
+          <h2 id="work-overview-title">Five projects.<br><em>Different kinds of problems.</em></h2>
+        </div>
+        <p>My work spans a live education platform, an Excel analysis, independent brand and software projects, and this portfolio itself. The labels below distinguish client work, personal projects and concept visuals.</p>
+      </div>
+
+      <div class="work-overview-grid">
+        <article>
+          <span>01 / CLIENT DELIVERY</span>
+          <h3>JAPRES Academy</h3>
+          <p>Website, student portal and administrative tools for an education client.</p>
+          <a href="#japres">Explore the case study ↓</a>
+        </article>
+
+        <article>
+          <span>02 / DATA ANALYSIS</span>
+          <h3>Retail sales in Excel</h3>
+          <p>800 Kenyan retail orders reviewed through data cleaning, measures and reporting.</p>
+          <a href="#sales">Explore the case study ↓</a>
+        </article>
+
+        <article>
+          <span>03 / PERSONAL PROJECT</span>
+          <h3>Aldermere Analytics</h3>
+          <p>A self-directed analytics brand and web presentation concept.</p>
+          <a href="#aldermere">Explore the case study ↓</a>
+        </article>
+
+        <article>
+          <span>04 / IN DEVELOPMENT</span>
+          <h3>ShopPro Cloud</h3>
+          <p>A shop management system project shown with test data.</p>
+          <a href="#shop">Explore the case study ↓</a>
+        </article>
+
+        <article>
+          <span>05 / WEBSITE PROJECT</span>
+          <h3>Stanley Munyao Tech</h3>
+          <p>This portfolio website, built to present projects, services and writing.</p>
+          <a href="#portfolio-site">Explore the case study ↓</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT INDEX & FILTERS -->
+  <section class="section">
+    <div class="container">
+      <nav class="project-index" aria-label="Project quick navigation">
+        <div>
+          <span class="index-step">PROJECT INDEX</span>
+          <h2>Explore the work</h2>
+          <p>Five documented projects: client delivery, analytics, personal brands and software in development. Each case study states its scope and status.</p>
+          <a class="inline-link" href="#japres">Start with the first case study <span aria-hidden="true">↓</span></a>
+        </div>
+        <ol class="index-grid">
+          <li><a href="#japres"><small>01 · Client</small><strong>JAPRES Academy</strong><span>School website &amp; student portal · <em>Delivered</em></span></a></li>
+          <li><a href="#sales"><small>02 · Data</small><strong>Sales Data Analysis</strong><span>Excel business intelligence · <em>Complete</em></span></a></li>
+          <li><a href="#aldermere"><small>03 · Brand</small><strong>Aldermere Analytics</strong><span>Brand &amp; website concept · <em>Personal</em></span></a></li>
+          <li><a href="#shop"><small>04 · Software</small><strong>ShopPro Cloud</strong><span>Shop-management app · <em>In development</em></span></a></li>
+          <li><a href="#portfolio-site"><small>05 · Web</small><strong>This Portfolio</strong><span>Multi-page editorial site · <em>Live</em></span></a></li>
+        </ol>
+      </nav>
+
+      <div class="filter-bar" aria-label="Filter projects">
+        <span>FILTER BY TYPE</span>
+        <div>
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data</button>
+          <button class="filter-btn" type="button" data-filter="software" aria-pressed="false">Software</button>
+        </div>
+        <small class="filter-count" aria-live="polite">Showing 5 of 5</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT 01: JAPRES ACADEMY -->
+  <article class="project-case" id="japres" data-category="web">
+    <header class="project-intro container">
+      <div class="project-intro-meta">
+        <span class="project-number">01</span>
+        <div class="project-intro-tags">
+          <span>Client case study</span><span>Education web &amp; portal</span>
+        </div>
+      </div>
+      <div class="project-intro-body">
+        <h2>JAPRES Academy</h2>
+        <p class="project-lead">A public-facing school website supported by a student portal and administrative tools.</p>
+        <p class="project-status"><span class="status-dot" aria-hidden="true"></span>Project delivered &amp; live</p>
+      </div>
+    </header>
+
+    <section class="project-showcase" aria-label="JAPRES Academy screenshots">
+      <div class="container">
+        <div class="showcase-main">
+          <figure class="shot">
+            <a href="assets/images/projects/japres-homepage.webp" target="_blank" rel="noopener" aria-label="Open larger image: JAPRES Academy public homepage">
+              <img src="assets/images/projects/japres-homepage.webp" alt="JAPRES Academy public homepage" width="1600" height="744" loading="lazy">
+            </a>
+            <figcaption>Public homepage</figcaption>
+          </figure>
+        </div>
+        <div class="showcase-pair">
+          <figure class="shot">
+            <a href="assets/images/projects/japres-student-portal.webp" target="_blank" rel="noopener" aria-label="Open larger image: JAPRES student portal profile page with personal details hidden">
+              <img src="assets/images/projects/japres-student-portal.webp" alt="JAPRES student portal profile page with personal details hidden" width="1600" height="752" loading="lazy">
+            </a>
+            <figcaption>Student portal profile page. Personal details are hidden.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/images/projects/japres-admin-dashboard.webp" target="_blank" rel="noopener" aria-label="Open larger image: JAPRES administrator dashboard overview">
+              <img src="assets/images/projects/japres-admin-dashboard.webp" alt="JAPRES administrator dashboard overview" width="1600" height="751" loading="lazy">
+            </a>
+            <figcaption>Administrator dashboard overview</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="japres-overview">
+      <div class="project-section-grid">
+        <span class="section-marker">Overview</span>
+        <div class="project-section-copy">
+          <h3 id="japres-overview">Project overview</h3>
+          <p>JAPRES Academy is an education website project that brings public-facing school information together with a private student portal. The live project is available for review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section-alt" aria-labelledby="japres-purpose">
+      <div class="container project-section-grid">
+        <span class="section-marker">Purpose</span>
+        <div class="project-section-copy">
+          <h3 id="japres-purpose">The challenge</h3>
+          <p>The goal was to give the school a clearer online presence and provide a dedicated digital area for student-facing information and administrative workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="japres-features">
+      <div class="project-section-grid">
+        <span class="section-marker">Features</span>
+        <div class="project-section-copy">
+          <h3 id="japres-features">Approach and features</h3>
+          <ul class="feature-grid">
+            <li><strong>Responsive public website</strong><span>School information pages that work across screen sizes.</span></li>
+            <li><strong>Student portal</strong><span>A dedicated student experience with authenticated access.</span></li>
+            <li><strong>Administrative dashboard</strong><span>Tools for managing portal information.</span></li>
+            <li><strong>Supabase services</strong><span>Authentication and data services behind the portal.</span></li>
+            <li><strong>Contact pathways</strong><span>Clear routes for parent and student enquiries.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info-band" aria-labelledby="japres-info">
+      <div class="container">
+        <h3 class="info-heading" id="japres-info">Project information</h3>
+        <dl class="info-grid">
+          <div><dt>Project type</dt><dd>Client website &amp; portal</dd></div>
+          <div><dt>Technology</dt><dd>HTML · CSS · JavaScript · Supabase</dd></div>
+          <div><dt>Status</dt><dd>Built and tested</dd></div>
+        </dl>
+        <p class="case-note">The screenshots show the public website, student portal and administrator dashboard. Personal details are concealed in the student portal image.</p>
+      </div>
+    </section>
+
+    <section class="project-live container" aria-labelledby="japres-live">
+      <div class="live-panel">
+        <div><h3 id="japres-live">See it live</h3><p>The JAPRES Academy website and student portal, open for review.</p></div>
+        <a class="btn-live" href="https://japres-academy.pages.dev/" target="_blank" rel="noopener noreferrer">Open JAPRES Academy ↗</a>
+      </div>
+    </section>
+
+    <section class="project-enquire container" aria-labelledby="japres-enquire">
+      <div class="enquire-panel">
+        <p class="enquire-lead">Need something similar for your school?</p>
+        <a class="btn btn-primary" href="contact.html?service=Web%20Development&amp;subject=Education%20website%20project">Discuss a similar education website ↗</a>
+      </div>
+    </section>
+  </article>
+
+  <!-- PROJECT 02: SALES DATA ANALYSIS -->
+  <article class="project-case project-case-data" id="sales" data-category="data">
+    <header class="project-intro container">
+      <div class="project-intro-meta">
+        <span class="project-number">02</span>
+        <div class="project-intro-tags"><span>Data analytics case study</span><span>Business intelligence</span></div>
+      </div>
+      <div class="project-intro-body">
+        <h2>Sales Data Analysis &amp; Business Intelligence</h2>
+        <p class="project-lead">An 800-order Kenyan retail dataset analysed in Excel to organise performance measures and surface useful trends.</p>
+        <p class="project-status"><span class="status-dot" aria-hidden="true"></span>Excel analysis complete</p>
+      </div>
+    </header>
+
+    <section class="project-showcase" aria-label="Sales analysis workbook screenshots">
+      <div class="container">
+        <div class="showcase-note">These dashboard and pivot-table previews are concept mockups using sample data. They are not screenshots of the actual workbook.</div>
+        <div class="showcase-pair">
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/excel-dashboard.webp" target="_blank" rel="noopener" aria-label="Open larger image: Concept Excel dashboard with sample data">
+              <img src="assets/images/projects/excel-dashboard.webp" alt="Concept Excel dashboard with sample data" width="1600" height="900" loading="lazy">
+            </a>
+            <figcaption>KPI dashboard concept; sample data, not the actual workbook.</figcaption>
+          </figure>
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/excel-pivot.webp" target="_blank" rel="noopener" aria-label="Open larger image: Concept Excel pivot table with sample data">
+              <img src="assets/images/projects/excel-pivot.webp" alt="Concept Excel pivot table with sample data" width="1600" height="900" loading="lazy">
+            </a>
+            <figcaption>Pivot table concept; sample data, not the actual workbook.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="sales-dataset">
+      <div class="project-section-grid">
+        <span class="section-marker">Dataset</span>
+        <div class="project-section-copy">
+          <h3 id="sales-dataset">Dataset overview</h3>
+          <p>The working dataset contains 800 retail orders with product, category, payment and city details for each order.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-band" aria-label="Recorded project figures">
+      <div class="container metric-strip">
+        <div><strong>KSh 60,023,185.05</strong><span>Total revenue</span></div>
+        <div><strong>800</strong><span>Orders</span></div>
+        <div><strong>3,313</strong><span>Units sold</span></div>
+        <div><strong>KSh 75,028.98</strong><span>Average order value</span></div>
+      </div>
+    </section>
+
+    <section class="project-section project-section-alt" aria-labelledby="sales-analysis">
+      <div class="container project-section-grid">
+        <span class="section-marker">Analysis</span>
+        <div class="project-section-copy">
+          <h3 id="sales-analysis">Questions the analysis explores</h3>
+          <ul class="feature-grid">
+            <li><strong>Revenue</strong><span>Reviewing sales totals across the recorded orders.</span></li>
+            <li><strong>Product performance</strong><span>Comparing product and category totals.</span></li>
+            <li><strong>Location</strong><span>Comparing recorded sales by city.</span></li>
+            <li><strong>Payment methods</strong><span>Reviewing how customers paid in the dataset.</span></li>
+            <li><strong>Monthly trends</strong><span>Exploring changes across the recorded months.</span></li>
+            <li><strong>Dashboard reporting</strong><span>Presenting measures in a readable summary.</span></li>
+          </ul>
+          <p><strong>Recorded leading category:</strong> Electronics. <strong>Recorded leading city:</strong> Nairobi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="sales-preparation">
+      <div class="project-section-grid">
+        <span class="section-marker">Preparation</span>
+        <div class="project-section-copy">
+          <h3 id="sales-preparation">Data preparation</h3>
+          <p>The Excel work focuses on organising the dataset before analysis: consistent column types, duplicate checks and prepared analysis sheets before summaries are created.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info-band" aria-labelledby="sales-info">
+      <div class="container">
+        <h3 class="info-heading" id="sales-info">Tools and project details</h3>
+        <dl class="info-grid">
+          <div><dt>Project type</dt><dd>Independent analytics project</dd></div>
+          <div><dt>Dataset</dt><dd>800 retail orders</dd></div>
+          <div><dt>Primary tool</dt><dd>Microsoft Excel</dd></div>
+          <div><dt>Scope note</dt><dd>This case study does not claim Python, SQL or Power BI as completed parts of this analysis.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-live container" aria-labelledby="sales-repo">
+      <div class="live-panel">
+        <div><h3 id="sales-repo">View the repository</h3><p>Project files for the documented Excel analysis.</p></div>
+        <a class="btn-live" href="https://github.com/stanleymunyaotech/sales-data-analysis-excel" target="_blank" rel="noopener noreferrer">Open the repository ↗</a>
+      </div>
+    </section>
+
+    <section class="project-enquire container" aria-labelledby="sales-enquire">
+      <div class="enquire-panel">
+        <p class="enquire-lead">Have data that needs this kind of structure?</p>
+        <a class="btn btn-primary" href="contact.html?service=Data%20Analytics&amp;subject=Sales%20data%20analysis%20enquiry">Discuss a data analysis project ↗</a>
+      </div>
+    </section>
+  </article>
+
+  <!-- PROJECT 03: ALDERMERE ANALYTICS -->
+  <article class="project-case" id="aldermere" data-category="web">
+    <header class="project-intro container">
+      <div class="project-intro-meta">
+        <span class="project-number">03</span>
+        <div class="project-intro-tags"><span>Personal brand project</span><span>Brand &amp; web</span></div>
+      </div>
+      <div class="project-intro-body">
+        <h2>Aldermere Analytics</h2>
+        <p class="project-lead">An independent brand and website concept developed as a personal project, not a client engagement.</p>
+        <p class="project-status"><span class="status-dot status-dot-soft" aria-hidden="true"></span>Personal project</p>
+      </div>
+    </header>
+
+    <section class="project-showcase" aria-label="Aldermere Analytics screenshots">
+      <div class="container">
+        <div class="showcase-pair">
+          <figure class="shot">
+            <a href="assets/images/projects/aldermere-site.webp" target="_blank" rel="noopener" aria-label="Open larger image: Aldermere Analytics website homepage">
+              <img src="assets/images/projects/aldermere-site.webp" alt="Aldermere Analytics website homepage" width="1600" height="751" loading="lazy">
+            </a>
+            <figcaption>Aldermere Analytics website concept.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/images/projects/aurevia-store.webp" target="_blank" rel="noopener" aria-label="Open larger image: Aurevia concept store">
+              <img src="assets/images/projects/aurevia-store.webp" alt="Aurevia concept online store associated with Aldermere Analytics" width="1600" height="754" loading="lazy">
+            </a>
+            <figcaption>Aurevia is a concept online store, not a real shop.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="aldermere-overview">
+      <div class="project-section-grid">
+        <span class="section-marker">Project overview</span>
+        <div class="project-section-copy">
+          <h3 id="aldermere-overview">About the project</h3>
+          <p>Aldermere Analytics is a personal brand and website concept exploring how an analytics-focused service can communicate clearly online.</p>
+          <ul class="feature-grid">
+            <li><strong>Positioning</strong><span>Service information written for clarity.</span></li>
+            <li><strong>Website structure</strong><span>A responsive presentation across pages.</span></li>
+            <li><strong>Contact pathways</strong><span>Clear routes for visitors to find out more.</span></li>
+          </ul>
+          <p>This work is a personal project. It is not presented as an external client engagement or a claim of client results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info-band" aria-labelledby="aldermere-info">
+      <div class="container">
+        <h3 class="info-heading" id="aldermere-info">Project information</h3>
+        <dl class="info-grid">
+          <div><dt>Project type</dt><dd>Personal brand and website concept</dd></div>
+          <div><dt>Focus</dt><dd>Brand messaging · Web design</dd></div>
+        </dl>
+        <p class="case-note">The website and store images are concept work. Aurevia is not an operating shop.</p>
+      </div>
+    </section>
+
+    <section class="project-live container" aria-labelledby="aldermere-live">
+      <div class="live-panel">
+        <div><h3 id="aldermere-live">Visit the preview</h3><p>Open the Aldermere Analytics brand site.</p></div>
+        <a class="btn-live" href="https://aldermereanalytics.com/" target="_blank" rel="noopener noreferrer">Visit Aldermere Analytics ↗</a>
+      </div>
+    </section>
+  </article>
+
+  <!-- PROJECT 04: SHOPPRO CLOUD -->
+  <article class="project-case" id="shop" data-category="software">
+    <header class="project-intro container">
+      <div class="project-intro-meta">
+        <span class="project-number">04</span>
+        <div class="project-intro-tags"><span>Software project</span><span>In development</span></div>
+      </div>
+      <div class="project-intro-body">
+        <h2>ShopPro Cloud</h2>
+        <p class="project-lead">A shop management system project demonstrating practical interface and workflow development.</p>
+        <p class="project-status"><span class="status-dot status-dot-soft" aria-hidden="true"></span>In development</p>
+      </div>
+    </header>
+
+    <section class="project-showcase" aria-label="ShopPro Cloud screenshots">
+      <div class="container">
+        <div class="showcase-note">The screenshots below are development views using test data. The project is still in development; these images do not verify a production release or customer results.</div>
+        <div class="showcase-pair">
+          <figure class="shot">
+            <a href="assets/images/projects/shoppro-landing.webp" target="_blank" rel="noopener" aria-label="Open larger image: ShopPro start screen">
+              <img src="assets/images/projects/shoppro-landing.webp" alt="ShopPro start screen using test data" width="1600" height="843" loading="lazy">
+            </a>
+            <figcaption>ShopPro start screen. Test data.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/images/projects/shoppro-analytics.webp" target="_blank" rel="noopener" aria-label="Open larger image: ShopPro sales records screen">
+              <img src="assets/images/projects/shoppro-analytics.webp" alt="ShopPro sales records screen using test data" width="1600" height="844" loading="lazy">
+            </a>
+            <figcaption>Sales screen. Test data.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/images/projects/shoppro-receipt.webp" target="_blank" rel="noopener" aria-label="Open larger image: ShopPro receipt screen">
+              <img src="assets/images/projects/shoppro-receipt.webp" alt="ShopPro receipt screen using test data" width="1600" height="828" loading="lazy">
+            </a>
+            <figcaption>Receipt screen. Test data.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container" aria-labelledby="shop-overview">
+      <div class="project-section-grid">
+        <span class="section-marker">Project overview</span>
+        <div class="project-section-copy">
+          <h3 id="shop-overview">A shop management project</h3>
+          <p>ShopPro Cloud is a software project in development. The available screens show a start page, sales records and a receipt view using test data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section-alt" aria-labelledby="shop-scope">
+      <div class="container project-section-grid">
+        <span class="section-marker">Current scope</span>
+        <div class="project-section-copy">
+          <h3 id="shop-scope">What is shown so far</h3>
+          <ul class="feature-grid">
+            <li><strong>Start screen</strong><span>A point of entry to the shop management interface.</span></li>
+            <li><strong>Sales view</strong><span>A screen presenting sales records using test data.</span></li>
+            <li><strong>Receipt view</strong><span>A receipt interface shown in the current development captures.</span></li>
+          </ul>
+          <p>Inventory controls, automated workflows, integrations and production use are not claimed by these screenshots.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info-band" aria-labelledby="shop-info">
+      <div class="container">
+        <h3 class="info-heading" id="shop-info">Project information</h3>
+        <dl class="info-grid">
+          <div><dt>Project type</dt><dd>Independent software project</dd></div>
+          <div><dt>Status</dt><dd>In development</dd></div>
+          <div><dt>Evidence</dt><dd>Interface screenshots with test data</dd></div>
+        </dl>
+      </div>
+    </section>
+  </article>
+
+  <!-- PROJECT 05: PORTFOLIO WEBSITE -->
+  <article class="project-case" id="portfolio-site" data-category="web">
+    <header class="project-intro container">
+      <div class="project-intro-meta">
+        <span class="project-number">05</span>
+        <div class="project-intro-tags"><span>Personal web project</span><span>Portfolio &amp; journal</span></div>
+      </div>
+      <div class="project-intro-body">
+        <h2>Stanley Munyao Tech</h2>
+        <p class="project-lead">A multi-page portfolio project presenting selected work, services, skills and journal content.</p>
+        <p class="project-status"><span class="status-dot status-dot-soft" aria-hidden="true"></span>Personal website project</p>
+      </div>
+    </header>
+
+    <section class="project-section container" aria-labelledby="portfolio-site-overview">
+      <div class="project-section-grid">
+        <span class="section-marker">Overview</span>
+        <div class="project-section-copy">
+          <h3 id="portfolio-site-overview">What this site includes</h3>
+          <p>This website is an ongoing personal project designed to present my professional direction and document selected work. It includes dedicated pages for services, skills, about information, contact and a Sanity-powered journal structure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info-band" aria-labelledby="portfolio-site-info">
+      <div class="container">
+        <h3 class="info-heading" id="portfolio-site-info">Project information</h3>
+        <dl class="info-grid">
+          <div><dt>Project type</dt><dd>Personal portfolio website</dd></div>
+          <div><dt>Focus</dt><dd>Editorial design · Responsive pages · Journal structure</dd></div>
+        </dl>
+      </div>
+    </section>
+  </article>
+
+  <!-- SAMPLE WORK GALLERY -->
+  <section class="section section-soft" id="samples">
+    <div class="container">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="eyebrow">SAMPLE GALLERY</span>
+          <h2>Data skills<br><em>in practice.</em></h2>
+        </div>
+        <p>The case studies above document selected projects. These additional screens are concept mockups using sample data. They are practice visuals, not client work or verified business results.</p>
+      </div>
+
+      <div class="gallery-block">
+        <h3>Python data analysis concepts</h3>
+        <p>Sample screens exploring data cleaning, summaries and trends.</p>
+        <div class="gallery">
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/python-cover.webp" target="_blank" rel="noopener"><img src="assets/images/projects/python-cover.webp" alt="Python data analysis concept cover" width="1600" height="900" loading="lazy"></a>
+            <figcaption>Concept cover</figcaption>
+          </figure>
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/python-notebook.webp" target="_blank" rel="noopener"><img src="assets/images/projects/python-notebook.webp" alt="Python notebook concept using sample data" width="1600" height="900" loading="lazy"></a>
+            <figcaption>Notebook concept</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-block">
+        <h3>SQL, Power BI and Excel concepts</h3>
+        <p>Additional practice visuals, labelled as concept mockups and sample data.</p>
+        <div class="gallery">
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/sql-cover.webp" target="_blank" rel="noopener"><img src="assets/images/projects/sql-cover.webp" alt="SQL concept cover using sample data" width="1600" height="900" loading="lazy"></a>
+            <figcaption>SQL concept cover</figcaption>
+          </figure>
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/powerbi-cover.webp" target="_blank" rel="noopener"><img src="assets/images/projects/powerbi-cover.webp" alt="Power BI concept cover using sample data" width="1600" height="900" loading="lazy"></a>
+            <figcaption>Power BI concept cover</figcaption>
+          </figure>
+          <figure class="shot">
+            <span class="tag-sample">Concept mockup · sample data</span>
+            <a href="assets/images/projects/excel-cover.webp" target="_blank" rel="noopener"><img src="assets/images/projects/excel-cover.webp" alt="Excel reporting concept using sample data" width="1600" height="900" loading="lazy"></a>
+            <figcaption>Excel concept cover</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="section portfolio-contact">
+    <div class="container">
+      <div class="closing-cta">
+        <div>
+          <span class="eyebrow">HAVE A SIMILAR CHALLENGE?</span>
+          <h2>Let’s make the next step<br><em>clear and practical.</em></h2>
+        </div>
+        <div>
+          <p>Tell me what you are trying to improve. We can discuss the scope, a suitable approach and whether I can help.</p>
+          <a class="btn btn-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+          <p><a href="mailto:stanleymunyao42@gmail.com">stanleymunyao42@gmail.com</a> · Nairobi, Kenya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark">SM</span>
+          <span class="brand-word">
+            <span class="brand-name">STANLEY MUNYAO <span class="brand-tech">TECH</span></span>
+            <small>SOFTWARE · DATA · DIGITAL SOLUTIONS</small>
+          </span>
+        </a>
+        <p>Building websites, software systems and data-driven solutions for practical challenges.</p>
+      </div>
+
+      <div class="footer-nav-group">
+        <span class="footer-label">Explore</span>
+        <a href="portfolio.html">Selected work</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Journal</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div class="footer-nav-group">
+        <span class="footer-label">Connect</span>
+        <a href="mailto:stanleymunyao42@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://linkedin.com/in/stanley-munyao" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/stanleymunyaotech" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://wa.me/254759916552" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Stanley Munyao. All rights reserved.</span>
+      <span>Nairobi, Kenya · Independent technology practice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/script.js" defer></script>
+<script src="js/sanity.js" defer></script>
+</body>
+</html>
